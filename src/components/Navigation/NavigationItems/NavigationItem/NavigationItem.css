@@ -1,0 +1,48 @@
+.NavigationItem{
+        margin: 10px 0;
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+}
+
+.NavigationItem a{
+        
+        color: #661106;
+        text-decoration: none;
+        width: 100%;
+        box-sizing: border-box;
+        display: block;
+        font-weight: bold;
+        font-family: 'Baloo Bhai 2', cursive;
+}
+
+.NavigationItem a:hover, .NavigationItem a:active,
+.NavigationItem a.active{
+    color: rgb(7, 126, 173);
+}
+
+@media (min-width: 500px){
+    .NavigationItem{
+        margin: 0;
+        width: auto;
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+    
+    .NavigationItem a{
+        color: white;
+        text-decoration: none;
+        height: 100%;
+        padding: 16px 10px;
+        border-bottom: 4px solid transparent;
+        
+    }
+    
+    .NavigationItem a:hover, .NavigationItem a:active,
+    .NavigationItem a.active{
+        background-color: #8F5C2C;
+        color: white;
+        border-bottom: 4px solid #40A4C8;
+    }
+}
